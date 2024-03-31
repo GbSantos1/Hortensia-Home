@@ -38,10 +38,10 @@ ul.nav a, ul.nav{
 #esquerda1, #direita1{
     font-size: 6vh;
     border-radius: 5px;
-     cursor: pointer;
+    cursor: pointer;
  
-     color: white;
-     background-color: #94949494;
+    color: white;
+    background-color: #94949494;
  }
 
 #esquerda1{
@@ -224,6 +224,7 @@ h3{
     font-weight: normal;
     color: black;
     font-size: 1vw;
+    width: 32vw;
 }
 
 .mapa-v2{
@@ -380,4 +381,88 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+/* Responsivo */
+
+@media (min-width:390px) and (max-width:844px){
+
+    header{
+        background-color: #304E42;
+        height: 10vh;
+        color: white;
+
+        align-items: center;
+    }
+
+    header h1{
+        font-size: 5vw;
+    }
+
+    ul.nav a, ul.nav{
+        display: none;
+    }
+
+    .carrossel{
+        height: 40vh;
+        gap: 27vw;
+    }
+    
+    #esquerda1, #direita1{
+        font-size: 7vw;
+    }
+
+    .not1{
+        font-size: 7vw;
+    }
+    
+    .not2{
+        font-size: 5vw;
+    }
+
+    .comunidade{
+        margin-top: 5vh;
+        font-size: 7vw;
+    }
+
+    .horta1, .horta2, .horta3{
+        height: 29vh;
+        width: 35vw;
+
+        row-gap: 0;
+    }
+
+    .horta3{
+        display: none;
+    }
+
+    .icon-perfil{
+        width: 12vw;
+    }
+
+    section h2{
+        font-size: 4vw;
+    }
+
+    .h-op{
+        font-size: 2vw;
+        width: 35vw;
+    }
+
+    section h4{
+        font-size: 2vw;
+    }
+
+    #esquerda2, #direita2{
+        font-size: 6vw;
+    }
+
+    .b-nav{
+        gap: 1vw;
+    }
+
+    .b-1, .b-2, .b-3, .b-4, .b-5{
+        width: 2.2vw;
+        height: 1.2vh;
+    }
 }
