@@ -426,7 +426,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 
     .horta1, .horta2, .horta3{
-        height: 29vh;
+        height: 200px;
         width: 35vw;
 
         row-gap: 0;
@@ -463,7 +463,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
     .b-1, .b-2, .b-3, .b-4, .b-5{
         width: 2.2vw;
-        height: 1.2vh;
+        height: 9px;
+        pointer-events: none;
     }
 
     .guia{
@@ -498,18 +499,21 @@ input[type="number"]::-webkit-inner-spin-button {
 
     form{
         width: 60vw;
+        height: 270px;
     }
 
     input{
         width: 55vw;
+        height: 30px;
         border-radius: 1vh;
         padding-left: 3vw;
 
-        font-size: 3vw;
+        font-size: 15px;
     }
 
     button{
         width: 30vw;
+        height: 40px;
         border-radius: 1vh;
 
         font-size: 3vw;
@@ -518,6 +522,7 @@ input[type="number"]::-webkit-inner-spin-button {
     /* efeitos */
 
     input::placeholder{
-        font-size: 3vw;
+        font-size: 15px;
     }
+
 }
