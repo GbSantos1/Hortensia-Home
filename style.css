@@ -87,20 +87,32 @@ header{
     flex-direction: row;
     gap: 2vw;
     justify-content: flex-end;
+    align-items: center;
 
     font-weight: normal;
 
     transition: all 0.475;
 }
 
+.Login{
+    background-color: #467260;
+    width: 4.5vw;
+    height: 4.5vh;
+    border-radius: 0.7vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 li a{
     position: relative;
 }
 
-li a::after{
+.inicio::after, .mapa::after, .doa::after, .sobre::after{
     content: " ";
     width: 0%;
-    height: 0.3vh;
+    height: 0.2vh;
     background-color: white;
     position: absolute;
     bottom: 0;
