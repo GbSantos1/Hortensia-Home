@@ -440,7 +440,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
         height: 45%;
         width: 26vw;
-        border-radius: 6px;
+        border-radius: 12px;
 
         animation-duration: 1s;
         margin-right: -100vw;
@@ -495,6 +495,7 @@ input[type="number"]::-webkit-inner-spin-button {
     .horta1, .horta2, .horta3{
         height: 200px;
         width: 35vw;
+        border-radius: 9px;
 
         row-gap: 0;
     }
