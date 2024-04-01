@@ -1,6 +1,10 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Inter", sans-serif;
     padding: 0;
@@ -11,6 +15,9 @@ body{
 header{
     background-color: #304E42;
     color: white;
+
+    display: flex;
+    align-items: center;
 }
 
 ul.nav a, ul.nav{
@@ -90,8 +97,6 @@ header{
     align-items: center;
 
     font-weight: normal;
-
-    transition: all 0.475;
 }
 
 .Login{
@@ -107,6 +112,10 @@ header{
 
 li a{
     position: relative;
+}
+
+.mobile-menu-icon{
+    display: none;
 }
 
 .inicio::after, .mapa::after, .doa::after, .sobre::after{
@@ -397,7 +406,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* Responsivo */
 
-/* Iphone Normal*/
+/*Celular*/
 @media (max-width:428px){
 
     header{
@@ -412,8 +421,52 @@ input[type="number"]::-webkit-inner-spin-button {
         font-size: 5vw;
     }
 
-    ul.nav a, ul.nav{
+    .nav{
+        gap: 20px;
+    }
+
+    #navigation_header{
+        z-index: 3;
+
         display: none;
+        position:absolute;
+        flex-direction: column;
+        justify-content: flex-start;
+        top: 0;
+        right: 0;
+        padding-top: 10px;
+
+        background-color: #304E42;
+
+        height: 100%;
+        width: 26vw;
+
+        animation-duration: 1s;
+        margin-right: -100vw;
+    }
+
+    @keyframes showSidebar {
+        from{margin-right: -100vw;}
+        top{margin-right: 0vw;}
+    }
+
+    .Login{
+        width: 15vw;
+        height: 4.5vh;
+        border-radius: 1.2vw;
+    }
+
+    li a:hover::after{
+        width: 0;
+    }
+
+    .icon{
+        background-color: transparent;
+        width: 0;
+    }
+
+    .mobile-menu-icon{
+        display: block;
     }
 
     .carrossel{
@@ -477,7 +530,6 @@ input[type="number"]::-webkit-inner-spin-button {
     .b-1, .b-2, .b-3, .b-4, .b-5{
         width: 2.2vw;
         height: 8px;
-        pointer-events: none;
     }
 
     .guia{

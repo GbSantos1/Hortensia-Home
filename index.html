@@ -12,16 +12,37 @@
 
 <body>
 
+    <script src="script.js"></script>
+
     <header>
         <h1>Hortensia</h1>
 
-        <ul class="nav">
-            <li class="inicio"><a href="/Home/index.html" class="inicio">Início</a></li>
+        <ul class="nav" id="navigation_header">
+
+            <div class="mobile-menu-icon">
+
+                <button  onclick="menuShow()" class="icon">
+                    <span class="material-symbols-outlined">
+                    close
+                    </span>
+                </button>
+            </div>
+
+            <li class="inicio"><a href="index.html" class="inicio">Início</a></li>
             <li class="mapa"><a href="" class="mapa">Mapa</a></li>
             <li class="doa"><a href="" class="doa">Doações</a></li>
             <li class="sobre"><a href="/Sobre/index.html" class="sobre">Sobre</a></li>
-            <li class="Login"><a href="" class="Login">Login</a></li>           
+            <li class="Login"><a href="#link-cadastro" class="login">Login</a></li>           
         </ul>
+
+        <div class="mobile-menu-icon">
+
+            <button  onclick="menuShow()" class="icon">
+                <span class="material-symbols-outlined">
+                menu
+                </span>
+            </button>
+        </div>
     
     </header>
 
@@ -116,7 +137,7 @@
         </iframe>
     </div>
 
-    <section class="cadastro">
+    <section class="cadastro" id="link-cadastro">
 
         <h1 class="cads">Cadastre-se</h1>
         <h3 class="cads-tex">Ao realizar o cadastro você passa a receber doações dentro do site
