@@ -155,11 +155,6 @@ li a:hover::after{
     gap: 2%;
 }
 
-.opcoes{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .h-op{
     font-size: 0.9vw;
     font-weight: normal;
@@ -170,7 +165,6 @@ li a:hover::after{
     height: 50vh;
     width: 25vw;
     border-radius: 1.2vw;
-    /* row-gap: 3vh; */
 
     background-color: #D9D9D9;
 }
@@ -179,7 +173,6 @@ li a:hover::after{
     height: 50vh;
     width: 25vw;
     border-radius: 1.2vw;
-    /* row-gap: 3vh; */
 
     background-color: #D9D9D9;
 }
@@ -188,7 +181,6 @@ li a:hover::after{
     height: 50vh;
     width: 25vw;
     border-radius: 1.2vw;
-    /* row-gap: 3vh; */
 
     background-color: #D9D9D9;
 }
@@ -600,6 +592,212 @@ input[type="number"]::-webkit-inner-spin-button {
 
     input::placeholder{
         font-size: 15px;
+    }
+
+}
+
+/* Tablet */
+@media (min-width:768px) and (max-width:884px){
+
+    header{
+        background-color: #304E42;
+        height: 9vh;
+        color: white;
+
+        align-items: center;
+    }
+
+    header h1{
+        font-size: 4vw;
+    }
+
+    .nav{
+        gap: 20px;
+    }
+
+    #navigation_header{
+        z-index: 3;
+
+        display: none;
+        position:absolute;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        padding-right: 20px;
+
+        background-color: #304E42;
+
+        height: 45%;
+        width: 26vw;
+        border-radius: 12px;
+
+        animation-duration: 1s;
+        margin-right: -100vw;
+    }
+
+    @keyframes showSidebar {
+        from{margin-right: -100vw;}
+        top{margin-right: 0vw;}
+    }
+
+    .Login{
+        width: 15vw;
+        height: 4.5vh;
+        border-radius: 1.2vw;
+    }
+
+    li a:hover::after{
+        width: 0;
+    }
+
+    .icon{
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        font-size: 5vw;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .carrossel{
+        height: 40vh;
+        gap: 27vw;
+    }
+    
+    #esquerda1, #direita1{
+        font-size: 7vw;
+    }
+
+    .not1{
+        font-size: 7vw;
+    }
+    
+    .not2{
+        font-size: 5vw;
+    }
+
+    .comunidade{
+        margin-top: 5vh;
+        font-size: 7vw;
+    }
+
+    .horta1, .horta2, .horta3{
+        height: 440px;
+        width: 35vw;
+        border-radius: 9px;
+
+        row-gap: 0;
+    }
+
+    .horta3{
+        display: none;
+    }
+
+    .icon-perfil{
+        width: 12vw;
+    }
+
+    section h2{
+        font-size: 4vw;
+    }
+
+    .h-op{
+        font-size: 2vw;
+        width: 28vw;
+    }
+
+    section h4{
+        font-size: 2vw;
+    }
+
+    #esquerda2, #direita2{
+        font-size: 6vw;
+    }
+
+    .b-nav{
+        gap: 1vw;
+    }
+
+    .b-1, .b-2, .b-3, .b-4, .b-5{
+        width: 2.2vw;
+        height: 20px;
+    }
+
+    .guia{
+        margin-top: 9vh;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .mapa-v1{
+        font-size: 6vw;
+    }
+    .mapa-v2{
+        font-size: 3vw;
+        margin-bottom: 3vh;
+    }
+
+    .mapa{
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: -35vw;
+    }
+
+    .botao-maps{
+        width: 35vw;
+        font-size: 3.4vw;
+        border-radius: 1.2vh;
+    }
+
+    iframe{
+        width: 80vw;
+        height: 30vh;
+        border-radius: 2vh;
+    }
+
+    .cadastro{
+        margin-top: 9vh;
+    }
+
+    .cads{
+        font-size: 7vw;
+    }
+
+    .cads-tex{
+        font-size: 3vw;
+        width: 65vw;
+    }
+
+    form{
+        width: 50vw;
+        height: 400px;
+    }
+
+    input{
+        width: 45vw;
+        height: 42px;
+        border-radius: 1vh;
+        padding-left: 3vw;
+
+        font-size: 15px;
+    }
+
+    button{
+        width: 30vw;
+        height: 55px;
+        border-radius: 1vh;
+
+        font-size: 3vw;
+    }
+
+    /* efeitos */
+
+    input::placeholder{
+        font-size: 2.2vw;
     }
 
 }
