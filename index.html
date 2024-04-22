@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hortensia</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/swiper.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="icon" href="assets/icon-hortensia.png" type="image/x-icon">
+    
 </head>
 
 <body>
-
-    <script src="script.js" defer></script>
 
     <header>
         <h1>Hortensia</h1>
@@ -21,7 +21,7 @@
 
             <div class="mobile-menu-icon">
 
-                <button  onclick="menuShow()" class="icon" id="x">
+                <button  onclick="menuShow()" class="icon-x" id="x">
                     <span class="material-symbols-outlined">
                     close
                     </span>
@@ -32,7 +32,16 @@
             <li class="mapa"><a href="#" class="mapa">Mapa</a></li>
             <li class="doa"><a href="#" class="doa">Doações</a></li>
             <li class="sobre"><a href="#" class="sobre">Sobre</a></li>
-            <li class="Login"><a href="#link-cadastro" class="login">Login</a></li>           
+            <li class="Login"><a href="#link-cadastro" class="login">Login</a>
+
+            <div class="menu-login">
+                <ul>
+                    <li><a href="#">Doador</a></li>
+                    <li><a href="#">Empresa/Ong</a></li>
+                </ul>
+            </div>
+
+            </li>           
         </ul>
 
         <div class="mobile-menu-icon">
@@ -46,69 +55,289 @@
     
     </header>
 
-    <section class="carrossel">
+    <main class="carrossel">
 
-        <span id="esquerda1" class="material-symbols-outlined" onclick="vol()">
-            chevron_left
-        </span>
+            <div class="swiper sldecar">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="assets/Carrossel/imagem1.png" alt=""></div>
+                  <div class="swiper-slide"><img src="Assets/Carrossel/imagem2.png" alt=""></div>
+                  <div class="swiper-slide"><img src="Assets/Carrossel/imagem3.png" alt=""></div>
+                </div>
+                <div class="swiper-button-next swiper-btnnext"></div>
+                <div class="swiper-button-prev swiper-btnprev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+    </main>
 
-        <div class="noticias">
-
-            <h1 class="not1">Notícia</h1>
-            <h3 class="not2">Notícia</h3>
-        </div>
-
-        <span id="direita1" class="material-symbols-outlined" onclick="prox()">
-            chevron_right
-
-    </section>
-
+    <section class="opcoes">
     <h1 class="comunidade">Comunidades</h1>
 
 
-    <section class="opcoes">
+    <div class="swiper-container cards">
+        <div class="swiper-wrapper wrapper-cards">
+
+          <div class="swiper-slide">
+
+            <div class="horta-item">
+
+                <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
         
-        <span id="esquerda2" class="material-symbols-outlined" onclick="vol()">
+                <h2>Horta 01</h2>
+                <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum</h3>
+                
+                <h4>@horta01</h4>
+            </div>
+            
+          </div>
+
+          <div class="swiper-slide">
+
+            <div class="horta-item">
+
+                <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+        
+                <h2>Horta 02</h2>
+                <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum</h3>
+                
+                <h4>@horta02</h4>
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <div class="horta-item">
+
+                <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+        
+                <h2>Horta 03</h2>
+                <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum</h3>
+                
+                <h4>@horta03</h4>
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <div class="horta-item">
+
+                <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+        
+                <h2>Horta 04</h2>
+                <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum</h3>
+                
+                <h4>@horta04</h4>
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <div class="horta-item">
+
+                <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+        
+                <h2>Horta 05</h2>
+                <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum</h3>
+                
+                <h4>@horta05</h4>
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+
+            <div class="horta-item">
+
+                <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+        
+                <h2>Horta 06</h2>
+                <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum</h3>
+                
+                <h4>@horta06</h4>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+
+            <div class="horta-item">
+
+                <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+        
+                <h2>Horta 07</h2>
+                <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum</h3>
+                
+                <h4>@horta07</h4>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+
+            <div class="horta-item">
+
+                <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+        
+                <h2>Horta 08</h2>
+                <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum</h3>
+                
+                <h4>@horta08</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+
+            <div class="horta-item">
+
+                <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+        
+                <h2>Horta 09</h2>
+                <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum</h3>
+                
+                <h4>@horta09</h4>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+
+            <div class="horta-item">
+
+                <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+        
+                <h2>Horta 10</h2>
+                <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum</h3>
+                
+                <h4>@horta10</h4>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+
+            <div class="horta-item">
+
+                <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+        
+                <h2>Horta 11</h2>
+                <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum</h3>
+                
+                <h4>@horta11</h4>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+
+            <div class="horta-item">
+
+                <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+        
+                <h2>Horta 12</h2>
+                <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                    and typesetting industry. Lorem Ipsum</h3>
+                
+                <h4>@horta12</h4>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-button-next botaonext"></div>
+        <div class="swiper-button-prev botaoprev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+    <!-- <section class="opcoes">
+        
+        <span id="prev2" class="material-symbols-outlined" onclick="prev2()">
             chevron_left
         </span>
 
-        <div class="horta1">
+        <div class="gallarywrapper">
 
-            <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+            <div class="gallarymenu">
 
-            <h2>Horta 01</h2>
-            <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
-                and typesetting industry. Lorem Ipsum</h3>
-            
-            <h4>@horta01</h4>
+                <div class="horta-item current-item">
+
+                    <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+
+                    <h2>Horta 01</h2>
+                    <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                        and typesetting industry. Lorem Ipsum</h3>
+                    
+                    <h4>@horta01</h4>
+                </div>
+
+                <div class="horta-item current-item">
+
+                    <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+
+                    <h2>Horta 02</h2>
+                    <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                        and typesetting industry. Lorem Ipsum</h3>
+
+                    <h4>@horta02</h4>
+                </div>
+
+                <div class="horta-item current-item" id="horta3">
+
+                    <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+
+                    <h2>Horta 03</h2>
+                    <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                        and typesetting industry. Lorem Ipsum</h3>
+                    
+                    <h4>@horta03</h4>
+                </div>
+
+                <div class="horta-item current-item">
+
+                    <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+
+                    <h2>Horta 04</h2>
+                    <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                        and typesetting industry. Lorem Ipsum</h3>
+                    
+                    <h4>@horta04</h4>
+                </div>
+
+                <div class="horta-item current-item">
+
+                    <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+
+                    <h2>Horta 05</h2>
+                    <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                        and typesetting industry. Lorem Ipsum</h3>
+                    
+                    <h4>@horta05</h4>
+                </div>
+
+                <div class="horta-item current-item">
+
+                    <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
+
+                    <h2>Horta 06</h2>
+                    <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
+                        and typesetting industry. Lorem Ipsum</h3>
+                    
+                    <h4>@horta06</h4>
+                </div>
+            </div>
         </div>
 
-        <div class="horta2">
-
-            <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
-
-            <h2>Horta 02</h2>
-            <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
-                and typesetting industry. Lorem Ipsum</h3>
-
-            <h4>@horta02</h4>
-        </div>
-
-        <div class="horta3">
-
-            <img src="assets/icon-perfil.png" alt="" class="icon-perfil">
-
-            <h2>Horta 03</h2>
-            <h3 class="h-op">Lorem Ipsum is simply dummy text of the printing 
-                and typesetting industry. Lorem Ipsum</h3>
-            
-            <h4>@horta03</h4>
-        </div>
-
-        <span id="direita2" class="material-symbols-outlined" onclick="prox()">
+        <span id="next2" class="material-symbols-outlined" onclick="next()">
             chevron_right
         </span>
-    </section>
+    </section> -->
 
 
     <div class="b-nav">
@@ -160,6 +389,11 @@
         <h3 class="texto-f">HORTENSIA</h3>
         <h4 class="ed-horta">hortensia@gmail.com</h4>
     </footer>
+
+    <script src="/JS/script.js" defer></script>
+    <!-- <script src="/JS/swiper-bundle.min.js"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
